@@ -36,7 +36,7 @@ ul {
 	padding-left: 15px;
 	margin: 0 auto;
 
-	/* outline: 2px solid red; */
+	outline: 2px solid red;
 }
 img {
 	display: block;
@@ -53,21 +53,27 @@ img {
 	background-color: var(--primary-white-color);
 	padding-top: 24px;
 	padding-bottom: 25px;
-	border: 1px solid #ececec;
+	border-bottom: 1px solid #ececec;
 }
 
 .header .container {
 	display: flex;
 	align-items: center;
 }
+
 .header-logo {
+	display: flex;
+	align-items: center;
+}
+.logo-link {
 	display: flex;
 	margin-right: 93px;
 }
-
 .header-list {
 	display: flex;
 	align-items: center;
+	margin-right: 0;
+	padding-right: 0;
 }
 
 .header-list-item:not(:last-child) {
@@ -80,6 +86,7 @@ img {
 .header-conect-item:not(:last-child) {
 	margin-right: 50px;
 }
+
 .logo-web {
 	font-family: "Raleway", sans-serif;
 	font-weight: 700;
@@ -95,8 +102,6 @@ img {
 	font-size: 26px;
 	line-height: 1.2;
 	color: var(--primary-text-color);
-
-	margin-right: 93px;
 }
 
 .header-nav {
@@ -191,14 +196,15 @@ img {
 	line-height: 1.14;
 	text-transform: uppercase;
 	color: var(--primary-text-color);
+	max-width: 270px;
 }
 .main-list-item {
 	font-size: 14px;
 	line-height: 2;
 	color: var(--second-text-color);
 
-	padding-top: 10px;
 	max-width: 270px;
+	margin-top: 10px;
 }
 .main-product {
 	font-weight: 700;
