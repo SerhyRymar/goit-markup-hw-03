@@ -36,7 +36,7 @@ ul {
 	padding-left: 15px;
 	margin: 0 auto;
 
-	outline: 2px solid red;
+	/* outline: 2px solid red; */
 }
 img {
 	display: block;
@@ -216,7 +216,7 @@ img {
 
 .container-main-product {
 	display: flex;
-	padding-top: 50px;
+	margin-top: 50px;
 }
 .main-product-list {
 	margin-right: 30px;
@@ -239,7 +239,7 @@ img {
 
 .container-main-team {
 	display: flex;
-	padding-top: 50px;
+	margin-top: 50px;
 	gap: 30px;
 }
 .main-team-list {
@@ -247,9 +247,8 @@ img {
 
 	width: 270px;
 	height: 368px;
-	border: 1px solid #eeeeee;
-	margin-top: 50px;
-	margin-bottom: 94px;
+	box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+	border-radius: 0px 0px 4px 4px;
 }
 .team-name-wrap {
 	padding: 30px;
@@ -267,6 +266,11 @@ img {
 	color: var(--second-text-color);
 	text-align: center;
 }
+.team-name-wrap .main-team-job {
+	padding-bottom: 0;
+	padding-top: 0;
+}
+
 /* -----------------------FOOTER--------------------------- */
 
 .address {
@@ -274,21 +278,20 @@ img {
 }
 .footer {
 	background: var(--accent-section-color);
+	padding-top: 60px;
+	padding-bottom: 60px;
 }
 .footer-logo {
-	padding-top: 60px;
-	padding-bottom: 20px;
+	display: inline-block;
+	margin-bottom: 20px;
 }
 .footer-adress {
 	font-size: 14px;
 	line-height: 1.7;
 	color: var(--primary-white-color);
 }
-.address-list {
-	padding-bottom: 60px;
-}
 .address-list-item {
-	padding-bottom: 9px;
+	margin-bottom: 9px;
 }
 .footer-contact {
 	font-size: 14px;
@@ -322,13 +325,15 @@ img {
 	line-height: 1.6;
 	color: var(--primary-white-color);
 	background-color: var(--accent-color);
+	box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
+	border-radius: 4px;
 }
 .container-button {
 	display: flex;
 	margin-bottom: 50px;
+	padding-top: 100px;
 }
 .button-list {
-	padding-top: 100px;
 	display: flex;
 	margin-left: auto;
 	margin-right: auto;
@@ -345,7 +350,9 @@ img {
 	padding-top: 20px;
 	padding-left: 24px;
 	padding-right: 24px;
-	border: 1px solid #eeeeee;
+	border-left: 1px solid #eeeeee;
+	border-right: 1px solid #eeeeee;
+	border-bottom: 1px solid #eeeeee;
 }
 .main-team-job {
 	padding-top: 4px;
@@ -360,13 +367,9 @@ img {
 .progect-list {
 	display: flex;
 	flex-wrap: wrap;
+	gap: 30px;
 }
 .progect-list-item {
 	width: 370px;
 	height: 404px;
-	margin-right: 30px;
-	margin-bottom: 30px;
-}
-.progect-list-item:nth-child(3n) {
-	margin-right: 0px;
 }
