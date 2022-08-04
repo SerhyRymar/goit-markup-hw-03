@@ -55,7 +55,9 @@ img {
 	padding-bottom: 25px;
 	border-bottom: 1px solid #ececec;
 }
-
+.header-link {
+	margin-right: 93px;
+}
 .header .container {
 	display: flex;
 	align-items: center;
@@ -67,7 +69,6 @@ img {
 }
 .logo-link {
 	display: flex;
-	margin-right: 93px;
 }
 .header-list {
 	display: flex;
@@ -174,6 +175,7 @@ img {
 	color: var(--primary-white-color);
 	background: var(--accent-color);
 	box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+	border-width: 0px;
 	border-radius: 4px;
 	cursor: pointer;
 	font-family: inherit;
@@ -187,8 +189,12 @@ img {
 .main-section-list {
 	display: flex;
 }
+.main-section-item {
+	max-width: 270px;
+}
 .main-section-item:not(:last-child) {
 	margin-right: 30px;
+	max-width: 270px;
 }
 .main-list {
 	font-weight: 700;
@@ -196,14 +202,12 @@ img {
 	line-height: 1.14;
 	text-transform: uppercase;
 	color: var(--primary-text-color);
-	max-width: 270px;
 }
 .main-list-item {
 	font-size: 14px;
 	line-height: 2;
 	color: var(--second-text-color);
 
-	max-width: 270px;
 	margin-top: 10px;
 }
 .main-product {
@@ -213,7 +217,9 @@ img {
 	text-align: center;
 	color: var(--primary-text-color);
 }
-
+.our-product {
+	padding-top: 0px;
+}
 .container-main-product {
 	display: flex;
 	margin-top: 50px;
@@ -317,6 +323,7 @@ img {
 	background-color: #f5f4fa;
 	border: transparent;
 	padding: 6px 22px;
+	border-radius: 4px;
 }
 .btn:hover,
 .btn:focus {
@@ -326,12 +333,10 @@ img {
 	color: var(--primary-white-color);
 	background-color: var(--accent-color);
 	box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
-	border-radius: 4px;
 }
 .container-button {
 	display: flex;
 	margin-bottom: 50px;
-	padding-top: 100px;
 }
 .button-list {
 	display: flex;
@@ -350,6 +355,7 @@ img {
 	padding-top: 20px;
 	padding-left: 24px;
 	padding-right: 24px;
+	padding-bottom: 20px;
 	border-left: 1px solid #eeeeee;
 	border-right: 1px solid #eeeeee;
 	border-bottom: 1px solid #eeeeee;
@@ -362,7 +368,7 @@ img {
 	font-size: 16px;
 	line-height: 1.9;
 	color: var(--second-text-color);
-	padding-bottom: 20px;
+	margin-top: 4px;
 }
 .progect-list {
 	display: flex;
